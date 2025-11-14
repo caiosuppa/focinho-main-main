@@ -1,129 +1,219 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Serviços - Focinho Feliz</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/serviços.css">
-</head>
-<body>
-  <header>
-  <div class="navbar">
-    <div class="nav-left">
-      <img id="nav-logo" src="../public/img/UNIPIAGET-Marca-Base.svg" alt="Logo Unipiaget">
-      <div class="nav-logo">
-        <span class="brand-name">Focinho Feliz</span>
-        <span class="brand-sub">Projeto UNIPIAGET</span>
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Focinho Feliz</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/serviços.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="navbar">
+        <div class="nav-left">
+
+          <img id="nav-logo" src="../public/img/UNIPIAGET-Marca-Base.svg" alt="Logo Unipiaget">
+
+          <div class="nav-logo">
+            <span class="brand-name">Focinho Feliz</span>
+            <span class="brand-sub">Projeto UNIPIAGET</span>
+          </div>
+        </div>
+
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="serviços.html" class="active">Adote Já</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="teste" class="servicos">
+
+        <h2 class="servicos-title">Animais Disponíveis para Adoção</h2>
+
+        <div class="servico">
+          <h3 class="servico-subtitle">Conheça nossos amigos que aguardam um lar</h3>
+          <p class="servico-text">Escolha seu novo companheiro entre cães e gatos resgatados em Suzano.</p>
+        </div>
+
+        <div class="servicos-line"></div>
+
+        <div class="pets-grid">
+
+          <div class="card1">
+            <img src="../public/img/nina.jpg" class="card-img-top" alt="Snow">
+            <div class="card-body">
+              <h5 class="card-title">Snow</h5>
+              <p class="card-text">Um cão muito brincalhão e amigável.</p>
+
+              <button class="btn-primary openPetCard"
+                data-nome="Snow"
+                data-descricao="Um cão muito brincalhão e amigável."
+                data-idade="2 anos"
+                data-porte="Médio"
+                data-raca="SRD"
+                data-img="../public/img/nina.jpg">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+
+          <div class="card1">
+            <img src="../public/img/nina.jpg" class="card-img-top" alt="Roger">
+            <div class="card-body">
+              <h5 class="card-title">Roger</h5>
+              <p class="card-text">Calmo, carinhoso e ótimo com crianças.</p>
+
+              <button class="btn-primary openPetCard"
+                data-nome="Roger"
+                data-descricao="Calmo, carinhoso e ótimo com crianças."
+                data-idade="3 anos"
+                data-porte="Grande"
+                data-raca="Labrador"
+                data-img="../public/img/nina.jpg">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+
+          <div class="card1">
+            <img src="../public/img/nina.jpg" class="card-img-top" alt="Vandinho">
+            <div class="card-body">
+              <h5 class="card-title">Vandinho</h5>
+              <p class="card-text">Cheio de energia e companheiro fiel.</p>
+
+              <button class="btn-primary openPetCard"
+                data-nome="Vandinho"
+                data-descricao="Cheio de energia e companheiro fiel."
+                data-idade="1 ano e 6 meses"
+                data-porte="Pequeno"
+                data-raca="SRD"
+                data-img="../public/img/nina.jpg">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+
+          <div class="card1">
+            <img src="../public/img/nina.jpg" class="card-img-top" alt="Caio">
+            <div class="card-body">
+              <h5 class="card-title">Caio</h5>
+              <p class="card-text">Excelente para casas com espaço.</p>
+
+              <button class="btn-primary openPetCard"
+                data-nome="Caio"
+                data-descricao="Excelente para casas com espaço."
+                data-idade="4 anos"
+                data-porte="Grande"
+                data-raca="Pastor Alemão"
+                data-img="../public/img/nina.jpg">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+
+          <div class="card1">
+            <img src="../public/img/nina.jpg" class="card-img-top" alt="Robsu">
+            <div class="card-body">
+              <h5 class="card-title">Robsu</h5>
+              <p class="card-text">Alegre, esperto e muito educado.</p>
+
+              <button class="btn-primary openPetCard"
+                data-nome="Robsu"
+                data-descricao="Alegre, esperto e muito educado."
+                data-idade="2 anos e meio"
+                data-porte="Médio"
+                data-raca="Beagle"
+                data-img="../public/img/nina.jpg">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+
+          <div class="card1">
+            <img src="../public/img/nina.jpg" class="card-img-top" alt="Molo">
+            <div class="card-body">
+              <h5 class="card-title">Molo</h5>
+              <p class="card-text">Carinhoso e sempre pronto para brincar.</p>
+
+              <button class="btn-primary openPetCard"
+                data-nome="Molo"
+                data-descricao="Carinhoso e sempre pronto para brincar."
+                data-idade="1 ano"
+                data-porte="Pequeno"
+                data-raca="Poodle"
+                data-img="../public/img/nina.jpg">
+                Ver Detalhes
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+
+        <div class="contato">
+          <div class="texto">
+            <img id="social-icons" class="ctt" src="../public/img/whatsapp.png" alt="WhatsApp">
+            <span>(55) 4002-8922</span>
+          </div>
+
+          <div class="texto">
+            <img id="social-icons" class="ctt" src="../public/img/email.png" alt="Email">
+            <span>focinhofeliz@gmail.com</span>
+          </div>
+
+          <div class="texto">
+            <img id="social-icons" class="ctt" src="../public/img/insta1.png" alt="Instagram">
+          </div>
+        </div>
+
+        <p class="footer-copy">
+          &copy; 2025 Focinho Feliz | Desenvolvido por estudantes da Universidade Piaget
+        </p>
+      </div>
+    </footer>
+
+    <div id="cardPetOverlay" class="card-overlay">
+      <div class="card-pet">
+
+        <span id="closeCardPet" class="close-btn">&times;</span>
+
+        <div class="card-pet-left">
+          <img id="cardPetImg" src="" alt="Foto do Pet">
+        </div>
+
+        <div class="card-pet-right">
+
+          <h2 id="cardPetNome"></h2>
+
+          <p><strong>Descrição:</strong> <span id="cardPetDescricao"></span></p>
+          <p><strong>Idade:</strong> <span id="cardPetIdade"></span></p>
+          <p><strong>Porte:</strong> <span id="cardPetPorte"></span></p>
+          <p><strong>Raça:</strong> <span id="cardPetRaca"></span></p>
+
+          <button class="btn-adotar">Quero Adotar ❤️</button>
+        </div>
+
       </div>
     </div>
 
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="serviços.html">Adote Já</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-  </div>
-</header>
-  <main>
-    <section id="teste" class="servicos">
-      <h2>Nossos Serviços</h2>
-      <div class="servico">
-        <h3>Lista de Animais</h3>
-        <p>Veja cães e gatos disponíveis para adoção em Suzano.</p>
-      </div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <div class="card1" >
-              <img src="../public/img/nina.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Snow</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col"> 
-            <div class="card1" >
-              <img src="../public/img/nina.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Roger</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col"> 
-            <div class="card1" >
-              <img src="../public/img/nina.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">vandinho</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col"> 
-            <div class="card1" >
-              <img src="../public/img/nina.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">caio</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col"> 
-            <div class="card1" >
-              <img src="../public/img/nina.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">robsu</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card1">
-              <img src="../public/img/nina.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">molo</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <br>
-       <br>
-       <br>
-   <footer>
-        <div class="footer-container">
-            <div class="contato">
-                <div class="texto">
-                    <img id="social-icons" class="ctt" src="../public/img/whatsapp.png" alt="WhatsApp">
-                    <span>(55) 4002-8922</span>
-                </div>
-                <div class="texto">
-                    <img id="social-icons"class="ctt" src="../public/img/email.png" alt="Email">
-                    <span>focinhofeliz@gmail.com</span>
-                </div>
-                <div class="texto">
-                    <img id="social-icons" class="ctt" src="../public/img/insta1.png" alt="Instagram">
-                </div>
-            </div>
-    
-            <p class="footer-copy">&copy; 2025 Focinho Feliz | Desenvolvido por estudantes da Universidade Piaget</p>
-        </div>
-    </footer>
-  <script src="js/script.js"></script>
+    <script src="../js/cardPet.js"></script>
 
-</body>
-</html>
+  </body>
+
+  </html>
