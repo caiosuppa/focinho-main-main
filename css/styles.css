@@ -25,7 +25,7 @@ section {
   padding: 2rem;
 }
 
-img {
+.d-block w-100 {
   width: 45%;
   border-radius: 10px;
   margin: 10px;
@@ -57,43 +57,12 @@ button:hover {
   background-color: #925A90;
 }
 
-.bi-instagram {
-    fill: #E1306C;
-}
-
-.bi-instagram:hover {
-    fill: #C135A4;
-}
 #sobre{
   text-align: center;
 }
-.carousel-container {
-  /* Permite a rolagem horizontal */
-  overflow-x: scroll;
-  /* Oculta a barra de rolagem nativa (opcional, mas comum) */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE e Edge */
-  /* Define que o scroll deve "grudar" nos elementos */
-  scroll-snap-type: x mandatory; 
 
-  /* Estilos para exibir os cards lado a lado */
-  display: flex; 
-  gap: 20px; /* Espaçamento entre os cards */
-  padding: 20px;
-
-}
-
-.card {
-  /* Garante que o card não diminua */
-  flex-shrink: 0; 
-  width: 1080px; /* Largura do seu card */
-  height: 1080px;
-  /* Define que o scroll deve parar (snap) no início do card */
-  scroll-snap-align: start; 
-}
 #teste{
   width: 80%; /* Ocupa 80% da largura da tela */
-    max-width: 1200px; /* Limita o tamanho máximo em telas grandes */
     margin: 50px auto; /* Centraliza horizontalmente e adiciona 50px de margem em cima/baixo */
     
     /* 2. Estilos Visuais */
@@ -102,52 +71,13 @@ button:hover {
     border-radius: 10px; /* Cantos arredondados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     
-    /* 3. Espaçamento Interno */
-    padding: 30px; /* Espaço entre o conteúdo e a borda da box */
-}
-.carousel-container {
-  /* 75% da altura da viewport, garantindo que seja visível */
-  height: 75vh; 
-  max-height: 500px; /* Limita a altura máxima em telas grandes */
-  overflow: hidden;
-  position: relative;
+   
 }
 
-/* Garante que o interior do carrossel preencha o container */
 .carousel-inner {
   height: 100%;
 }
 
-/* Garante que cada item do carrossel preencha sua altura e largura */
-.carousel-item {
-  height: 100%;
-}
-
-/* Estilo para as imagens dentro do carrossel */
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  /* Garante que a imagem cubra toda a área sem distorcer, cortando o que for necessário */
-  object-fit: cover; 
-  border-radius: 0.5rem; /* Adiciona bordas arredondadas às imagens */
-}
-
-/* Estilo personalizado para os botões de controle (setas) */
-.custom-control-btn {
-  /* Adiciona um fundo semi-transparente e arredondado aos botões de controle */
-  @apply bg-black/50 hover:bg-black/70 transition duration-300 ease-in-out w-10 h-10 rounded-full flex items-center justify-center top-1/2 -translate-y-1/2 absolute z-10;
-}
-
-/* Estilo para a seta em si (usando o ícone padrão do Bootstrap) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  /* Aumenta o tamanho dos ícones padrão (se eles estiverem visíveis) */
-  width: 1.5rem; 
-  height: 1.5rem;
-  filter: brightness(0) invert(1); /* Garante que os ícones sejam brancos */
-}
-
-/* Define a posição dos botões de controle */
 .carousel-control-prev {
   left: 20px;
 }
@@ -156,19 +86,13 @@ button:hover {
   right: 20px;
 }
 
-/* card */
 
 .container text-center{
-  flex-direction: column;
+  display: flex;
 }
 
 .row, col{
   flex-direction: row;
   columns: 3;
   row-gap: 2;
-}
-
-.card1 {
-  width: 18rem;
-  padding-bottom: 50px;
 }
