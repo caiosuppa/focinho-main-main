@@ -8,21 +8,16 @@
 :root {
   --primary: #6f3ce3;
   --primary-dark: #4722a8;
-
   --text-dark: #1d1d1f;
   --text-light: #6b6b6d;
   --text-soft: #8a8a8d;
-
   --bg-light: #ffffff;
   --bg-light-alt: #fafafa;
-
   --shadow-soft: 0 4px 14px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.14);
   --shadow-strong: 0 24px 55px rgba(0,0,0,0.20);
-
   --radius: 20px;
 }
-
 
 .servicos {
   text-align: center;
@@ -53,8 +48,6 @@
   border-radius: 10px;
 }
 
-
-
 .pets-grid {
   width: 100%;
   display: grid;
@@ -63,15 +56,12 @@
   padding: 10px 0 80px;
 }
 
-
 .card1 {
   background: var(--bg-light);
   border-radius: var(--radius);
   overflow: hidden;
-
   box-shadow: var(--shadow-soft);
   border: 1px solid #ececec;
-
   transition: 0.25s ease;
   cursor: pointer;
 }
@@ -115,7 +105,6 @@
   border-radius: 12px;
   border: none;
   cursor: pointer;
-
   transition: 0.22s ease;
   font-size: 15px;
   font-weight: 600;
@@ -125,17 +114,13 @@
   background: var(--primary-dark);
 }
 
-
-
 .card-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
-
   display: none;
   justify-content: center;
   align-items: center;
-
   backdrop-filter: blur(14px);
   z-index: 9999;
 }
@@ -143,14 +128,11 @@
 .card-pet {
   width: 95%;
   max-width: 900px;
-
   background: rgba(255,255,255,0.92);
   border-radius: 32px;
-
   display: flex;
   overflow: hidden;
   position: relative;
-
   box-shadow: var(--shadow-strong);
   border: 1px solid rgba(255,255,255,0.55);
   backdrop-filter: blur(25px);
@@ -177,10 +159,8 @@
   position: absolute;
   bottom: 18px;
   right: 18px;
-
   background: var(--primary);
   padding: 7px 18px;
-
   color: white;
   font-size: 13px;
   font-weight: 700;
@@ -220,10 +200,8 @@
   color: #333;
   background: #fafafa;
   padding: 14px 18px;
-
   border-radius: 14px;
   border: 1px solid #e7e7e7;
-
   box-shadow: 0 2px 7px rgba(0,0,0,0.03);
 }
 
@@ -231,15 +209,12 @@
   background: var(--primary);
   padding: 16px 32px;
   color: white;
-
   border: none;
   border-radius: 14px;
   margin-top: 25px;
-
   cursor: pointer;
   font-size: 18px;
   font-weight: 700;
-
   transition: .2s ease;
 }
 
@@ -254,7 +229,6 @@
   font-size: 36px;
   cursor: pointer;
   color: #555;
-
   padding: 6px 10px;
   border-radius: 12px;
   background: rgba(255,255,255,0.55);
@@ -264,6 +238,20 @@
   color: #222;
 }
 
+@keyframes contentLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: contentLoad 0.9s ease-out forwards;
+}
 
 @media (max-width: 780px) {
   .card-pet {
